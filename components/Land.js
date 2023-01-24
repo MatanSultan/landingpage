@@ -18,7 +18,7 @@ export default function Land() {
               backgroundImage: "url('/Fotor_AI.png')",
             }}
           >
-            <span id="logo" className="w-full h-full absolute text-3xl ml-12 ">
+            <span id="logo" className="w-full h-full absolute text-3xl ml-12 text-white">
               LOGO HERE
             </span>
           </div>
