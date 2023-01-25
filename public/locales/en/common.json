@@ -1,6 +1,13 @@
 {
     "title-text": "let build the future with us",
-    "subtitle-text": "hi there, we are a team of developers who are passionate about building the future with you. we are here to build your dream. website to your business and your ideas.",
-    "contact-us": "get tach with us"
+    "subtitle-text":"It doesn't matter if you run a small business, a company or an organization - you simply have to build a website. Building a website for a business will give it a number of important advantages that will affect it in the long and short term at the same time.",
+    "contact-us": "get tach with us",
+    "first-name":"first name :",
+    "last-name":"last name :",
+    "email":"email :",
+    "phone":"phone :",
+    "message":"you can write your message here :",
+    "send":"send"
+
 
 }

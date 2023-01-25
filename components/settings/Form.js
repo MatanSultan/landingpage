@@ -8,18 +8,18 @@ export default function Form() {
 
   return (
     <div>
-      <div class="text-xl font-bold text-center text-gray-700 mt-12">
+      <div class="text-xl font-bold text-center text-gray-700 mt-12 ">
         <h1> {t("contact-us")} </h1>
       </div>
 
-      <form class="w-full mt-6">
+      <form class="w-full mt-6 mr-2 ml-2">
         <div class="flex flex-wrap -mx-3 mb-6">
           <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
               class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               for="grid-first-name"
             >
-              First Name
+              {t("first-name")}
             </label>
             <input
               class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
@@ -36,7 +36,7 @@ export default function Form() {
               class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               for="grid-last-name"
             >
-              Last Name
+              {t("last-name")}
             </label>
             <input
               class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -52,7 +52,7 @@ export default function Form() {
               for="email-address-icon"
               class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
-              Your Email
+              {t("email")}
             </label>
             <div class="relative">
               <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -83,25 +83,19 @@ export default function Form() {
               class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               for="grid-password"
             >
-              Your Message
+              {t("message")}
             </label>
             <textarea
               rows="10"
               class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             ></textarea>
           </div>
-          <div class="flex justify-between w-full px-3">
-            <div class="md:flex md:items-center">
-              <label class="block text-gray-500 font-bold">
-                <input class="mr-2 leading-tight" type="checkbox" />
-                <span class="text-sm">Send me your newsletter!</span>
-              </label>
-            </div>
+          <div class="flex justify-center w-full px-3">
             <button
-              class="shadow bg-indigo-600 hover:bg-indigo-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
+              class=" shadow bg-indigo-600 hover:bg-indigo-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded items-center "
               type="submit"
             >
-              Send Message
+              {t("send")}
             </button>
           </div>
         </div>

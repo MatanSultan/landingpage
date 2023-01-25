@@ -13,7 +13,7 @@ export default function Land() {
       <main>
         <Settings />
 
-        <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75">
+        <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-95">
           <div
             className="absolute top-0 w-full h-full bg-center bg-cover"
             style={{
@@ -24,14 +24,14 @@ export default function Land() {
               id="logo"
               className="w-full h-full absolute text-3xl  text-white"
             >
-              <Image
+              {/* <Image
                 src="/logotrabio.gif"
                 alt="iconland"
                 width={100}
                 height={100}
                 //when is in he mt-4 mr-14 when en mt-4 ml-14
                 className="mt-4 ml-14"
-              />
+              /> */}
             </span>
           </div>
           <div className="container relative mx-auto">
