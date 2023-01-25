@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import Settings from "./settings/Settings";
+import Form from "./settings/Form";
 
 export default function Land() {
   const { t } = useTranslation("common");
@@ -11,6 +12,7 @@ export default function Land() {
     <>
       <main>
         <Settings />
+
         <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75">
           <div
             className="absolute top-0 w-full h-full bg-center bg-cover"
@@ -18,8 +20,18 @@ export default function Land() {
               backgroundImage: "url('/Fotor_AI.png')",
             }}
           >
-            <span id="logo" className="w-full h-full absolute text-3xl ml-12 text-white">
-              LOGO HERE
+            <span
+              id="logo"
+              className="w-full h-full absolute text-3xl  text-white"
+            >
+              <Image
+                src="/logotrabio.gif"
+                alt="iconland"
+                width={100}
+                height={100}
+                //when is in he mt-4 mr-14 when en mt-4 ml-14
+                className="mt-4 ml-14"
+              />
             </span>
           </div>
           <div className="container relative mx-auto">
@@ -30,9 +42,7 @@ export default function Land() {
                     {t("title-text")}
                   </h1>
                   <p className="mt-4 text-2xl text-white">
-                    hi there, we are a team of developers who are passionate
-                    about building the future with you. we are here to build
-                    your dream. website to your business and your ideas.
+                    {t("subtitle-text")}
                   </p>
                 </div>
               </div>
@@ -119,6 +129,9 @@ export default function Land() {
           </div>
         </section>
       </main>
+      <div>
+        <Form />
+      </div>
     </>
   );
 }

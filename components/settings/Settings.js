@@ -17,13 +17,13 @@ export default function Settings() {
         type="button"
         className={`fixed top-5
       ${locale === "en" ? "right- text-white" : "left- text-white"}
-      z-10 bg-primary-3 p-[10px] rounded-[5px]`}
+      z-10 p-[10px] rounded-[5px]`}
       >
         <SettingsIcon className="fill- w-[30px] h-[30px]" />
       </button>
       {/* if the settings modal is open, show blurred overlay behind it: */}
       {isOpen && (
-        <div className="fixed left-0 top-0 right-0 bottom-0 bg-primary-5 bg-opacity-20 backdrop-blur-lg z-40"></div>
+        <div className="fixed left-0 top-0 right-0 bottom-0 bg-white bg-opacity-20 backdrop-blur-lg z-40"></div>
       )}
       <FocusTrap
         active={isOpen}
@@ -41,12 +41,12 @@ export default function Settings() {
       >
         {isOpen ? (
           // the modal:
-          <div className="fixed top-2/4 left-2/4 bg-secondary-2 bg-opacity-70 p-2 min-w-[20%] w-[250px] max-w-[90%] z-50 -translate-x-2/4 -translate-y-2/4">
+          <div className="fixed top-2/4 left-2/4  bg-opacity-70  min-w-[20%] w-[250px] max-w-[100%] z-50 -translate-x-2/4 -translate-y-2/4">
             {/* the link to switch lang: */}
             <Link
               href={router.asPath}
               locale={locale === "en" ? "he" : "en"}
-              className="m-auto flex justify-center gap-3"
+              className="m-auto flex justify-center items-center"
             >
               <LanguageIcon />
               <span>{locale === "en" ? "עברית" : "English"} </span>
