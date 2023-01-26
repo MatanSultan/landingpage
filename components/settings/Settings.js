@@ -16,14 +16,18 @@ export default function Settings() {
         onClick={() => setIsOpen(true)}
         type="button"
         className={`fixed top-5
-      ${locale === "en" ? "right- text-white" : "left- text-white"}
-      z-10 p-[10px] rounded-[5px]`}
+      ${
+        locale === "en"
+          ? "right- text-white bg-slate-600"
+          : "left- text-white bg-slate-600"
+      }
+      z-10 mt-6 rounded-[5px]`}
       >
         <SettingsIcon className="fill- w-[30px] h-[30px]" />
       </button>
       {/* if the settings modal is open, show blurred overlay behind it: */}
       {isOpen && (
-        <div className="fixed left-0 top-0 right-0 bottom-0 bg-white bg-opacity-20 backdrop-blur-lg z-40"></div>
+        <div className="fixed left-0 top-0 right-0 bottom-0  bg-opacity-20 backdrop-blur-lg z-40 "></div>
       )}
       <FocusTrap
         active={isOpen}
@@ -51,10 +55,6 @@ export default function Settings() {
               <LanguageIcon />
               <span>{locale === "en" ? "עברית" : "English"} </span>
             </Link>
-            {/* the button to switch theme:
-            <button type="button" className="block w-full" onClick={toggleTheme}>
-              Change Theme
-            </button> */}
           </div>
         ) : (
           // empty & hidden div, because FocusTrap must contain a child inside of it

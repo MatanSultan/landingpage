@@ -12,7 +12,7 @@ export default function Form() {
         <h1> {t("contact-us")} </h1>
       </div>
 
-      <form class="w-full mt-6 mr-2 ml-2">
+      <form class="w-full mt-6  ml-2">
         <div class="flex flex-wrap -mx-3 mb-6">
           <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
