@@ -44,7 +44,7 @@ export default function LetsTalkSection() {
 
   return (
     <div className="p-5" id="letsTalkSection">
-      <div className="p-3 bg-primary-1 bg-opacity-40 backdrop-blur-sm rounded-sm flex flex-col gap-3">
+      <div className="p-3 bg-white bg-opacity-40 backdrop-blur-sm rounded-sm flex flex-col gap-3">
         <Input
           checkErrorCallback={nameError}
           valueObj={inputsData}
@@ -87,15 +87,17 @@ export default function LetsTalkSection() {
           }
           onClick={handleSubmit}
           type="button"
-          className="p-3 bg-secondary-2 mt-3 disabled:opacity-40 disabled:cursor-not-allowed"
+          className="p-3 bg-gray-200 mt-3 disabled:opacity-40 disabled:cursor-not-allowed"
         >
           {status === statusEnum.loading ? t("loading") : t("send")}
         </button>
         {status === statusEnum.thanks && (
-          <span className="text-success-5">{t("thanks-for-sending")}</span>
+          <span className="text-[green] text-center">
+            {t("thanks-for-sending")}
+          </span>
         )}
         {status === statusEnum.error && (
-          <span className="text-error-5">{t("error-sending")}</span>
+          <span className="text-red-500 text-center">{t("error-sending")}</span>
         )}
       </div>
     </div>
