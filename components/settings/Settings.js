@@ -18,10 +18,10 @@ export default function Settings() {
         className={`fixed top-5
       ${
         locale === "en"
-          ? "right- text-white bg-slate-600"
-          : "left- text-white bg-slate-600"
+          ? "right- text-white bg-slate-600 ml-2"
+          : "left- text-white bg-slate-600 mr-2"
       }
-      z-10 mt-6 rounded-[5px]`}
+      z-10  mt-6 rounded-[5px]`}
       >
         <SettingsIcon className="fill- w-[30px] h-[30px]" />
       </button>

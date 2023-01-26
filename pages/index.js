@@ -6,7 +6,7 @@ import Land from "../components/Land";
 
 export default function Home() {
   return (
-    <div>
+    <div className="w-[100%]">
       <Land />
     </div>
   );
