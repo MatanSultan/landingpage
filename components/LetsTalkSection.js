@@ -35,7 +35,6 @@ export default function LetsTalkSection() {
       setStatus(statusEnum.thanks);
       setInputsData(inputsDataDefault);
     } catch (error) {
-      console.log("Bla axios" + error);
       setStatus(statusEnum.error);
     }
   }
@@ -87,7 +86,7 @@ export default function LetsTalkSection() {
           }
           onClick={handleSubmit}
           type="button"
-          className="p-3 bg-gray-200 mt-3 disabled:opacity-40 disabled:cursor-not-allowed"
+          className="p-3 bg-gray-500 mt-3 disabled:opacity-40 disabled:cursor-not-allowed"
         >
           {status === statusEnum.loading ? t("loading") : t("send")}
         </button>

@@ -19,9 +19,9 @@ export default function Input(props) {
     <div className={`flex flex-col relative pt-4 ${error ? "invalid" : ""}`}>
       <input
         {...copyOfProps}
-        className={`input w-full border-0 border-b-[1px] border-b-primary-7 border-opacity-40 outline-0 text-base
-        py-[7px] bg-[transparent] transition-[border-color] text-primary-7
-        placeholder:text-opacity-0 outline-none
+        className={`input w-full border-0 border-b-[1px] border-b-black border-opacity-40 outline-0 text-base
+        py-[7px] bg-[transparent] transition-[border-color] text-black
+        placeholder:text-red200text-opacity-0 outline-none
         ${props.className || ""}`}
         value={valueObj[name]}
         name={name}
@@ -35,7 +35,10 @@ export default function Input(props) {
       <label htmlFor={name} className={"formLabel"}>
         {props.placeholder}
       </label>
-      <label htmlFor={name} className={"errorLabel"}>
+      <label
+        htmlFor={name}
+        className={"errorLabel text-red-800 text-xl italic"}
+      >
         {error}
       </label>
     </div>

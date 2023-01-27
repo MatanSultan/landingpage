@@ -20,21 +20,7 @@ export default function Land() {
             style={{
               backgroundImage: "url('/Fotor_AI.png')",
             }}
-          >
-            {/* <span
-            id="logo"
-            className="w-full h-full absolute text-3xl  text-white"
-          > */}
-            {/* <Image
-                src="/logotrabio.gif"
-                alt="iconland"
-                width={100}
-                height={100}
-                //when is in he mt-4 mr-14 when en mt-4 ml-14
-                className="mt-4 ml-14"
-              /> */}
-            {/* </span> */}
-          </div>
+          ></div>
           <div className="container relative mx-auto tex">
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
@@ -72,7 +58,9 @@ export default function Land() {
                     <h6 className="text-xl font-semibold">
                       {t("full-explained")}
                     </h6>
-                    <p className="mt-2 mb-4 text-blueGray-500">{t("text")}</p>
+                    <p className="mt-2 mb-4 text-blueGray-500">
+                      {t("ui-and-development")}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -112,7 +100,9 @@ export default function Land() {
                     <h6 className="text-xl font-semibold">
                       {t("Attractive-price")}
                     </h6>
-                    <p className="mt-2 mb-4 text-blueGray-500">{t("text")}</p>
+                    <p className="mt-2 mb-4 text-blueGray-500">
+                      {t("Attractive-price-d")}
+                    </p>
                   </div>
                 </div>
               </div>
