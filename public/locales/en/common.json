@@ -32,7 +32,9 @@
       "send": "Send",
       "loading": "Loading...",
       "thanks-for-sending": "Form sent! Thank you, we'll get back to you very soon!",
-      "error-sending": "Something went wrong! Please try to submit the form again later..."
+      "error-sending": "Something went wrong! Please try to submit the form again later...",
+      "wont-share": "We won't share your email with anyone else.",
+      "build-future": "let's build the future together Today"
     }
     
 

@@ -43,6 +43,9 @@ export default function LetsTalkSection() {
 
   return (
     <div className="p-5" id="letsTalkSection">
+      <span className="text-3xl font-bold text-center">
+        {t("build-future")}
+      </span>
       <div className="p-3 bg-white bg-opacity-40 backdrop-blur-sm rounded-sm flex flex-col gap-3">
         <Input
           checkErrorCallback={nameError}
@@ -76,6 +79,7 @@ export default function LetsTalkSection() {
           name="email"
           placeholder={t("inputs.email")}
         />
+        <span className="text-sm text-gray-900">{t("wont-share")}</span>
         <button
           disabled={
             emailError(inputsData.email) ||
