@@ -5,6 +5,7 @@ import { useTranslation } from "next-i18next";
 import Settings from "./settings/Settings";
 import Form from "./settings/Form";
 import LetsTalkSection from "./LetsTalkSection";
+import SeeMoreCard from "./SeeMoreCard";
 
 export default function Land() {
   const { t } = useTranslation("common");
@@ -13,7 +14,6 @@ export default function Land() {
     <>
       <div className="w-[100%]">
         <Settings />
-
         <div className="relative pt-16 pb-32 flex content-center items-center justify-center text-center">
           <div
             className="absolute top-0 h-full bg-center bg-cover w-[100%]"
@@ -21,7 +21,7 @@ export default function Land() {
               backgroundImage: "url('/Fotor_AI.png')",
             }}
           ></div>
-          <div className="container relative mx-auto tex">
+          <div className="container relative mx-auto tFex">
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <div className="">
@@ -40,7 +40,6 @@ export default function Land() {
             style={{ transform: "translateZ(0)" }}
           ></div>
         </div>
-
         <section className="pb-20 bg-blueGray-200 -mt-24 bg-gray-200 ">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap">
@@ -110,6 +109,7 @@ export default function Land() {
           </div>
         </section>
 
+        <SeeMoreCard />
         <div>
           {/* <Form /> */}
           <LetsTalkSection />

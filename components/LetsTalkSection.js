@@ -42,7 +42,7 @@ export default function LetsTalkSection() {
   const { t } = useTranslation("common");
 
   return (
-    <div className="p-5" id="letsTalkSection">
+    <div className="mt-6 p-5" id="letsTalkSection">
       <span className="text-3xl font-bold">{t("build-future")}</span>
       <div className="p-3 bg-white bg-opacity-40 backdrop-blur-sm rounded-sm flex flex-col gap-3">
         <Input
